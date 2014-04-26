@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>创建模态对话框</title>
+<link href="styles/themes/start/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="source/css/style.css"/>
+<script src="source/js/flash.js"></script>
+<style type="text/css">
+ .ui-button, .ui-dialog{
+	font-family: "宋体";
+	font-size: 12px;
+}
+#login p{font-family: "宋体";font-size: 12px;}
+#login input{font-family: "宋体";font-size: 12px;}
+#login label{font-family: "宋体";font-size: 12px;margin-left: 3em;}
+#msg1, #msg2{display: none;}
+</style>
+<script type="text/javascript" src="scripts/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.bgiframe-2.1.1.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.resizable.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.button.js"></script>
+<script type="text/javascript" src="scripts/ui/jquery.ui.dialog.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#close").dialog({
+		autoOpen: false,
+		modal: true,
+		show: "show",
+		hide: "hide",
+		buttons: {
+			"确定": function () {
+				window.close();
+			},
+			"取消": function () {
+				$(this).dialog("close");
+			}
+		}
+	});
+	$("#login").dialog({
+		autoOpen: false,
+		modal: true,
+		show: "show",
+		hide: "hide",
+		buttons: {
+			"确定": function () {
+				var username = $("#username").val();
+				var password = $("#password").val();
+				if (username == "") {
+					$("#username").addClass("ui-state-error");
+					$("#msg1").show();
+					return;
+				} else {
+					$("#username").removeClass("ui-state-error");
+					$("#msg1").hide();
+				}
+				if (password == "") {
+					$("#password").addClass("ui-state-error");
+					$("#msg2").show();
+					return;
+				} else {
+					$("#password").removeClass("ui-state-error");
+					$("#msg2").hide();
+				}
+				/*var content = "欢迎光临！<br />用户名：" + username + "；<br />密码：" + password;
+				$(this).dialog("close");*/
+			},
+			"取消": function () {
+				if ($("#username").val("").hasClass("ui-state-error")) {
+					$("#username").removeClass("ui-state-error");
+					$("#msg1").hide();
+				}
+				if ($("#password").val("").hasClass("ui-state-error")) {
+					$(" #password").removeClass("ui-state-error");
+					$("#msg2").hide();
+				}
+				$(this).dialog("close");
+			}
+		}
+	});
+	
+	$("#login-button").click(function () {
+		if(this.innerText=="请登录")
+		$("#login").dialog("open");
+		else
+		$("#close").dialog("open");
+	});
+});
+</script>
+<script>
+  function bac(sr){
+	document.getElementById("shou").src=sr;  
+  }
+  function bac1(sr){
+	document.getElementById("shu").src=sr;  
+  }
+  function bac2(sr){
+	document.getElementById("shouji").src=sr;  
+  }
+  function bac3(p){
+	document.getElementById("zui").src=p;  
+  }
+  function bac4(p){
+	document.getElementById("rui").src=p;  
+  }
+  function bac5(p){
+	document.getElementById("taolun").src=p;  
+  }
+  function bac6(p){
+	document.getElementById("bang").src=p;  
+  }
+</script>
+<script>
+  var i=0;
+  function dis1(){  
+	document.getElementById("zhi").src="images/zhifu1.gif";  
+	document.getElementById("gong").src="images/gonggao1.gif"; 
+	document.getElementById("huo").src="images/huodong.gif"; 
+	document.getElementById("n2").style.display="block";
+	document.getElementById("n1").style.display="none";
+	document.getElementById("n3").style.display="none";
+  }
+  function dis3(){
+	  document.getElementById("zhi").src="images/zhifu.gif";  
+	document.getElementById("gong").src="images/gonggao1.gif"; 
+	document.getElementById("huo").src="images/huodong1.gif"; 
+	document.getElementById("n3").style.display="block";
+	document.getElementById("n1").style.display="none";
+	document.getElementById("n2").style.display="none";
+  }
+  function dis2(){
+	    document.getElementById("zhi").src="images/zhifu.gif";  
+	    document.getElementById("gong").src="images/gonggao.gif"; 
+	    document.getElementById("huo").src="images/huodong.gif";
+		document.getElementById("n1").style.display="block";
+	document.getElementById("n2").style.display="none";
+	document.getElementById("n3").style.display="none";
+  }
+</script>
+<style type="text/css">
+  .tr{width:220px; height:20px; line-height:20px; padding-left:10px}
+  .tr a{ font-size:13px; text-decoration:none; color:#585858}
+  .fan{width:232px; height:90px; margin-left:2px; padding-top:15px; border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-bottom:#cccccc solid 1px;}
+</style>
+</head>
+
+<body>
+
+<div class="head"><!---head--->
+   <div class="hea">
+     <span class="huo"><a href="#">我的账户</a></span><span class="huo"><a href="#">宝贝活动</a></span><span class="huo"><a href="#">好友邀请</a></span><span class="huo"><a href="#">客服中心</a></span><span class="huo"><a href="#">收藏本站</a></span>
+   </div>
+   <div class="hea2">
+   <span>您好，欢迎来数码宝贝！&nbsp;[<a href="#" id="login-button">请登录</a>]&nbsp;&nbsp;&nbsp;[<a href="#">免费注册</a>]</span>
+   </div>
+</div><!---head--->
+<div class="navi"><!---navigation--->
+   <div class="navi_center">
+     <table width="947" height="41" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+             <td width="81" height="28"><img src="source/images/shou1.gif" width="81" height="41" onmouseover="bac('images/shou.gif')" onmouseout="bac('images/shou1.gif')" id="shou"/></td>
+             <td width="70"><img src="source/images/shuma.gif" width="70" height="41" onmouseover="bac1('images/shuma1.gif')" onmouseout="bac1('images/shuma.gif')" id="shu"/></td>
+             <td width="70"><img src="source/images/shouji.gif" width="70" height="41" onmouseover="bac2('images/shouji1.gif')" onmouseout="bac2('images/shouji.gif')" id="shouji"/></td>
+             <td width="106"><img src="source/images/zuixin.gif" width="106" height="41" id="zui" onmouseover="bac3('images/zuixin1.gif')" onmouseout="bac3('images/zuixin.gif')"/></td>
+             <td width="106"><img src="source/images/ruijiang.gif" width="106" height="41" id="rui" onmouseover="bac4('images/ruijiang1.gif')" onmouseout="bac4('images/ruijiang.gif')"/></td>
+             <td width="92"><img src="source/images/taolun.gif" width="92" height="41" id="taolun" onmouseover="bac5('images/taolun1.gif')"  onmouseout="bac5('images/taolun.gif')"/></td>
+             <td width="422"><img src="source/images/bangzhu.gif" width="66" height="41" id="bang" onmouseover="bac6('images/bangzhu1.gif')" onmouseout="bac6('images/bangzhu.gif')"/></td>
+       </tr> 
+     </table>
+  </div>
+</div><!---navigation--->
+<div class="current"><!---current--->
+   <div class="type">
+     <div id="lie"><span>&nbsp;</span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">手机优雅型</a></span></div>
+     <div id="lie"><span><a href="#">mp3音乐宝贝</a></span></div>
+     <div id="lie"><span><a href="#">mp4音乐至上</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     <div id="lie"><span><a href="#">数码宝贝</a></span></div>
+     
+   </div>
+   <div class="right"><!---right--->
+     <div class="search">
+       <div class="text"><input id="key" type="text" value=""/></div>
+       <div class="sousuo"></div>
+       <div id="remen">
+       <strong style="color:#C00">热门搜索：</strong>
+       <a href="#" target="_blank">mp3音乐</a>
+       <a href="#" target="_blank">多普达</a>
+       <a href="#" target="_blank">联想</a>
+       <a href="#" target="_blank">索尼</a>
+       <a href="#" target="_blank">松下</a>
+      
+       </div>
+     </div>
+    
+     <div class="flash">
+              <div align="center" style="width:500px">
+                <div id="ifocus">
+                 <div id="ifocus_pic">
+                  <div id="ifocus_piclist" style="left:0px; top:3px;">
+                   <ul>
+                    <li><a href="#" target="_blank"><img src="source/tupian/1298480763963.jpg" alt="武林三国" width="515" border="0" /></a></li>
+                    <li><a href="#" target="_blank"><img src="source/tupian/1301012856150.jpg" alt="武林英雄" height="252" border="0" /></a></li>
+                    <li><a href="#" target="_blank"><img src="source/tupian/1301443688718.jpg" alt="商业大亨" border="0" /></a></li>
+                    <li><a href="#" target="_blank"><img src="source/tupian/OOOPIC_mengduantianya_20090610dc8b0be36e3bd3c8.jpg" alt="帝国远征" border="0" /></a></li>
+                   </ul>
+                  </div>
+                  <div id="ifocus_opdiv"></div>
+                  <div id="ifocus_tx">
+                   <ul>
+                    <li class="current">2008年度排名第一的网页游戏</li>
+                    <li class="normal">2009年最新的网页游戏 </li>
+                    <li class="normal">商业大亨，挑战亿万富翁</li>
+                    <li class="normal">一款2009年不得不玩的帝国远征</li>
+                   </ul>
+                  </div>
+                 </div>
+                 <div id="ifocus_btn">
+                  <ul>
+                   <li class="current"><img src="source/tupian/1298480763963.jpg" alt="" /></li>
+                   <li class="normal"><img src="source/tupian/1301012856150.jpg" alt="" /></li>
+                   <li class="normal"><img src="source/tupian/1301443688718.jpg" alt="" /></li>
+                   <li class="normal"><img src="source/tupian/OOOPIC_mengduantianya_20090610dc8b0be36e3bd3c8.jpg" alt="" /></li>
+                  </ul>
+                 </div>
+                </div>
+                </div>
+     </div><!---flash--->
+     <div class="login">
+        <div class="line"><span style="color:#515151;">邮&nbsp;&nbsp;&nbsp;箱：</span><input name="txt_UserName" type="text" maxlength="60" id="txt_UserName" tabindex=            "1" class="in1" style="width:90px;" />&nbsp;&nbsp;&nbsp;<a href="#" class="a1">注&nbsp;&nbsp;&nbsp;册</a></div>
+
+        <div class="line"><span style="color:#515151;">密&nbsp;&nbsp;&nbsp;码：</span><input name="txt_PWD" type="password" maxlength="30" id="txt_PWD"             tabindex="2" class="in1" name="textfield" style="width:90px;" />&nbsp;&nbsp;&nbsp;<a href="#" class="a1">忘记密码</a></div>
+        <div class="line" style="padding-left:15px;"><span style="color:#515151;">验证码：</span><input name="txt_VerifyCode" type="text" maxlength="5" id="txt_VerifyCode" tabindex="3" class="in1" style="width:52px;" /> <a href="#"><img src="source/images/yanzheng.gif" id="valiCode" alt="验证码" style="cursor:pointer;" border="0">  </a></div>
+         <div class="line" style="width:164px;*width:168px; color:Red; display:none; text-align:center;" id="div_msg"></div>
+                        <div class="line" style="padding-left:66px;width:164px;*padding-left:62px;*width:168px;color:#515151;"><input type="checkbox" name="LoginWay" id=           "LoginWay" value="1" tabindex="4">记录我的登录状态&nbsp;&nbsp;&nbsp;</div>
+                        <div class="line" style="padding-left:66px;width:164px;*padding-left:65px;*width:165px;">
+
+                            <input class="input1" name="SMONEY" type="hidden" value="ABC" />
+                            <input type="image" name="Login_Submit" id="Login_Submit" tabindex="5" src="source/images/login.gif" style="              border-width:0px;margin-bottom:-2px; border-width:0px;margin-bottom:-2px;" />
+                        </div>
+                        <div class="line" style="padding-left:0px;width:230px;">
+                          <div class="h">
+                            <a href="#">能做什么？</a><br/>
+                            <a href="#">是什么？</a><br/>
+                            <a href="#">怎样才能获？</a>
+
+                          </div>
+                        </div>
+                    </div>  
+                    
+
+     </div>
+     <div class="guang">
+        <div class="tu"><img src="source/images/kasio.gif" /><img src="source/images/baohumo.gif" /><img src="source/images/luyinbi.gif" /><img src=    "source/images/jizhong.gif" /></div>
+        <div class="fen">
+                         <div style="width:240px; height:134px">
+                           <div style="width:240px; height:26px"><img src="source/images/gonggao.gif" width="82" height="32" id="gong" onmouseover="dis2()"/><img src="source/images/zhifu.gif" width="78" height="32" onmouseover="dis1()" id="zhi"/><img src="source/images/huodong.gif" width="79" height="32" id="huo" onmouseover="dis3()"/></div>
+               
+               
+               <div class="fan" id="n1">
+                    <div class="tr"><a href="#" target="_blank">手机支付活动</a></div>
+                    <div class="tr"><a href="#" target="_blank">手机支付活动</a></div>
+                    <div class="tr"><a href="#" target="_blank">手机支付活动</a></div>
+               </div>
+               
+               
+               
+               
+               
+               
+               <div class="fan" id="n2" style="display:none">
+                   <div class="tr"><a href="#" target="_blank">购物送红包</a></div>
+                    <div class="tr"><a href="#" target="_blank">购物送红包</a></div>
+                    <div class="tr"><a href="#" target="_blank">购物送红包</a></div>
+               </div>
+               <div class="fan" id="n3" style="display:none">
+                  <div class="tr"><a href="#" target="_blank">新款上市</a></div>
+                    <div class="tr"><a href="#" target="_blank">新款上市</a></div>
+                    <div class="tr"><a href="#" target="_blank">新款上市</a></div>
+               </div>
+            </div>
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+        </div><!---fen--->
+     </div><!---guang--->
+   </div><!---right--->
+</div><!---current--->
+
+<div class="xinpin">
+   <div class="biaoti"></div>
+   <div class="biaoti-tu">
+       <ul>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/niuman.gif" /></a></span><br />
+            <div style="width:130px; height:35px;padding-left:5px;"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/4.jpg" /></a></span>
+            <div style="width:130px; height:35px;padding-left:5px"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/5.jpg" /></a></span>
+            <div style="width:130px; height:35px;padding-left:5px"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/3.gif" /></a></span>
+            <div style="width:130px; height:35px;padding-left:5px"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/1.gif" /></a></span>
+            <div style="width:130px; height:35px;padding-left:5px"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+            <li>
+            <span class="img"><a href="#" target="_blank"><img src="source/shangpinImages/2.gif" /></a></span>
+            <div style="width:130px; height:35px;padding-left:5px"><span class="desp">超高级数码相机v2500,价格实惠超高级数码</span></div>
+            <span class="price">￥168.0</span>
+            </li>
+       </ul>
+   </div><!---biaoti-tu--->
+</div><!---xinpin--->
+<div class="shuma">
+     <div class="shuma-topic"><span><a href="#" target="_blank">新式mp3</a><a href="#" target="_blank">迷你音响</a><a href="#" target="_blank">超级手机</a><a href="#" target="_blank">音乐铅笔</a><a href="#" target="_blank">超薄mp5</a></span></div>
+     <div class="shuma-content">
+          <div class="content-left"><a href="#" target="_blank"><img src="source/shangpinImages/YINXIANG.gif" alt="超迷你小音箱"/></a></div>
+          <div class="content-right">
+             <div class="content-right-shang">
+                  <ul>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/12.gif" /></a></span><br />
+                      <div style="width:110px; height:35px;padding-left:5px;"><span class="desp1">超高级数码相机v2500,价格实惠</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/17.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,实惠超数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/14.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数相机v2500,价格实级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/16.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/18.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                </ul>
+             </div>
+             <div class="content-right-guang"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/guang.gif" /></a></div>
+          </div>
+     </div><!---shuma-content--->
+</div><!---shuma--->
+
+<div class="shuma">
+     <div class="shuma-topic"><span><a href="#" target="_blank">新式mp3</a><a href="#" target="_blank">迷你音响</a><a href="#" target="_blank">超级手机</a><a href="#" target="_blank">音乐铅笔</a><a href="#" target="_blank">超薄mp5</a></span></div>
+     <div class="shuma-content">
+          <div class="content-left"><a href="#" target="_blank"><img src="source/shangpinImages/sh1.gif" alt="新式mp4"/></a></div>
+          <div class="content-right">
+             <div class="content-right-shang">
+                  <ul>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/12.gif" /></a></span><br />
+                      <div style="width:110px; height:35px;padding-left:5px;"><span class="desp1">超高级数码相机v2500,价格实惠</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/17.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,实惠超数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/14.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数相机v2500,价格实级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/16.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/18.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                </ul>
+             </div>
+             <div class="content-right-guang"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/guang.gif" /></a></div>
+          </div>
+     </div><!---shuma-content--->
+</div><!---shuma--->
+
+<div class="shuma">
+     <div class="shuma-topic"><span><a href="#" target="_blank">新式mp3</a><a href="#" target="_blank">迷你音响</a><a href="#" target="_blank">超级手机</a><a href="#" target="_blank">音乐铅笔</a><a href="#" target="_blank">超薄mp5</a></span></div>
+     <div class="shuma-content">
+          <div class="content-left"><a href="#" target="_blank"><img src="source/shangpinImages/sh3.gif" alt="台电 C520VE(8G)mp4" /></a></div>
+          <div class="content-right">
+             <div class="content-right-shang">
+                  <ul>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/12.gif" /></a></span><br />
+                      <div style="width:110px; height:35px;padding-left:5px;"><span class="desp1">超高级数码相机v2500,价格实惠</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/17.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,实惠超数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/14.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数相机v2500,价格实级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/16.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/18.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                </ul>
+             </div>
+             <div class="content-right-guang"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/guang.gif" /></a></div>
+          </div>
+     </div><!---shuma-content--->
+</div><!---shuma--->
+
+<div class="shuma">
+     <div class="shuma-topic"><span><a href="#" target="_blank">新式mp3</a><a href="#" target="_blank">迷你音响</a><a href="#" target="_blank">超级手机</a><a href="#" target="_blank">音乐铅笔</a><a href="#" target="_blank">超薄mp5</a></span></div>
+     <div class="shuma-content">
+          <div class="content-left"><a href="#" target="_blank"><img src="source/shangpinImages/sh2.gif" alt="阿尔卡特MP3手机"/></a></div>
+          <div class="content-right">
+             <div class="content-right-shang">
+                  <ul>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/12.gif" /></a></span><br />
+                      <div style="width:110px; height:35px;padding-left:5px;"><span class="desp1">超高级数码相机v2500,价格实惠</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/17.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,实惠超数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/14.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数相机v2500,价格实级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/16.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/18.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                </ul>
+             </div>
+             <div class="content-right-guang"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/guang.gif" /></a></div>
+          </div>
+     </div><!---shuma-content--->
+</div><!---shuma--->
+<div class="shuma">
+     <div class="shuma-topic"><span><a href="#" target="_blank">新式mp3</a><a href="#" target="_blank">迷你音响</a><a href="#" target="_blank">超级手机</a><a href="#" target="_blank">音乐铅笔</a><a href="#" target="_blank">超薄mp5</a></span></div>
+     <div class="shuma-content">
+          <div class="content-left"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/sh4.gif" /></a></div>
+          <div class="content-right">
+             <div class="content-right-shang">
+                  <ul>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/12.gif" /></a></span><br />
+                      <div style="width:110px; height:35px;padding-left:5px;"><span class="desp1">超高级数码相机v2500,价格实惠</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/17.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,实惠超数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/14.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数相机v2500,价格实级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/16.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,级数码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                      <li>
+                      <span class="img1"><a href="#" target="_blank"><img src="source/shangpinImages/18.gif" /></a></span>
+                      <div style="width:110px; height:35px;padding-left:5px"><span class="desp1">超高级数码相机v2500,码</span></div>
+                      <span class="price1">￥168.0</span>
+                      </li>
+                </ul>
+             </div>
+             <div class="content-right-guang"><a href="#" alt="超迷你小音箱" target="_blank"><img src="source/shangpinImages/guang.gif" /></a></div>
+          </div>
+     </div><!---shuma-content--->
+</div><!---shuma--->
+
+<div class="lianjie">
+   <div class="lian1"><span><br /><a href="#" style="font-size:14px; font-weight:bold; color:#F00">友情连接</a><br /><a href="#">如此网</a><br /><a href="#">手机话费</a><br /><a href="#">网络电话</a></span></div>
+   <div class="lian1"><span><br /><a href="#">友情连接</a><br /><a href="#">如此网</a><br /><a href="#">手机话费</a><br /><a href="#">网络电话</a></span></div>
+   <div class="lian1"><span><br /><a href="#">中国移动</a><br /><a href="#">电脑商城</a><br /><a href="#">哈佛网</a><br /><a href="#">手机购点卡</a></span></div>
+   <div class="lian1"><span><br /><a href="#">手机购物</a><br /><a href="#">北京生活网</a><br /><a href="#">有啥网</a><br /><a href="#">我们网</a></span></div>
+   <div class="lian1"><span><br /><a href="#">移动手机钱包</a><br /><a href="#">彩客网</a><br /><a href="#">新浪乐居</a><br /><a href="#">易宝支付</a></span></div>
+   <div class="lian1"><span><br /><a href="#">电脑商城网</a><br /><a href="#">高尔夫球具</a><br /><a href="#">乐购城</a><br /><a href="#">奥运运动城</a></span></div>
+   <div class="lian1"><span><br /><a href="#">服装商城</a><br /><a href="#">北京生活网</a><br /><a href="#">网上购物论坛</a><br /><a href="#">家居装饰网</a></span></div>
+   <div class="lian1"><span><br /><a href="#">中国联通</a><br /><a href="#">EC宝购物导航</a><br /><a href="#">网上充话费</a><br /><a href="#">开心校友</a></span></div>
+   <div class="lian1"><span><br /><a href="#">宝贝商城</a><br /><a href="#">腾讯数码</a><br /><a href="#">阿里巴巴数码</a><br /><a href="#">第三媒体</a></span></div>
+   <div class="lian1"><span><br /><a href="#">中华科技网</a><br /><a href="#">万维家电网</a><br /><a href="#">IT商业网</a><br /><a href="#">网聚网</a></span></div>
+</div><!---lianjie--->
+<div class="bangzhu"><a href="#" target="_blank"><img src="source/shangpinImages/bottom1.gif" /></a><a href="#" target="_blank"><img src="source/shangpinImages/bottom2.gif" /></a><a href="#" target="_blank"><img src="source/shangpinImages/bottom3.gif" /></a><a href="#" target="_blank"><img src="source/shangpinImages/bottom4.gif" /></a></div>
+
+<div class="guanyu"><a href="#">关于数码宝贝</a><a href="#">服务条款</a><a href="#">帮助中心</a><a href="#">友情链接</a><a href="#">支付说明</a><a href="#">客服服务</a><a href="#">联系我们</a></div>
+
+<div class="banquan"><img src="source/shangpinImages/banquan.gif" /></div>
+
+<p><a href="#" id="login-button">请登录</a></p><hr />
+<div id="close" title="确认关闭窗口">
+<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 10px 0;"></span>您确实要关闭当前窗口吗？</p>
+</div>
+<div id="login" title="登录网站">
+<form>
+<p><label for="username">用户名：</label><input type="text" id="username" class="ui-widget-content ui-corner-all" /><span id="msg1">*</span></p><br />
+<p><label for="password">密&nbsp;&nbsp;码：</label><input type="password" id="password" class="ui-widget-content ui-corner-all" /><span id="msg2">*</span></p></form>
+</div>
+</body>
+</html>

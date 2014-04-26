@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>一个基于jQuery的翻书的Js效果丨芯晴网页特效丨CsrCode.Cn</title>
+    <script type="text/javascript" language="javascript" src="http://www.codefans.net/ajaxjs/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(function() {
+            $("#right").click(function() {
+            var roll = $("<div/>", { css: { position: "absolute", border: "solid 1px #999", left: "806px", top: "10px", height: "494px", width: "1px", background: "#fff url(http://www.codefans.net/jscss/demoimg/201011/eCX.png) repeat-y -200px 0px"} }).appendTo($("#book").parent());
+                $(roll).animate({
+                    left: "10px",
+                    width: "398px",
+                    "background-position": "272px 0px"
+                }, 1000, function() {
+                    $("#left").css({"background":"#fff"});
+                    $(roll).fadeOut(300, function() {
+                        $(roll).remove();
+                    })
+                });
+            });
+        });
+    </script>
+</head>
+<body style="padding:5px;margin:0;">
+    <div id="book" style="width:797px;height:494px;background:#ccc;border:solid 6px #ccc;">
+        <div id="left" style="width:398px;height:494px;float:left;background:url(http://www.codefans.net/jscss/demoimg/201011/PLh.png) no-repeat top left;cursor:pointer;">12312312313</div>
+        <div id="right" style="width:398px;height:494px;float:left;background:#fff;cursor:pointer;margin-left:1px;text-align:right;"><p style="margin-top:470px;font-size:12px;color:#999;">点这翻页&nbsp;&nbsp;</p>asdasdasdasd</div>
+        <div id="right" style="width:398px;height:494px;float:left;background:#fff;cursor:pointer;margin-left:1px;text-align:right;"><p style="margin-top:470px;font-size:12px;color:#999;">点这翻页&nbsp;&nbsp;</p>asdasdasdasd</div>
+    </div>
+    
+    
+</body>
+</html>
+如果不显示预览效果，请刷新页面。
+<p align="center">本特效由 <a href="http://www.CsrCode.cn" target="_blank">芯晴网页特效</a>丨CsrCode.Cn 收集于互联网，只为兴趣与学习交流，不作商业用途。来源：源码爱好者</p>
+
+文章由 芯晴网页特效|CsrCode.CN 收集(www.CsrCode.cn) 详文参考：http://www.csrcode.cn/html/txdm/ymck/2830.htm

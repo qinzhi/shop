@@ -1,0 +1,121 @@
+/* CSS Document */
+
+*{ margin:0px; padding:0px; text-decoration:none; list-style:none; font-size:14px;}
+
+.fr{ float:right;}
+.fl{float:left;}
+.tops{ height:25px; background:url(img/tou.png) repeat-x;}
+.tops ul li{ float:right;}
+.tops ul li a{ display:block; height:20px; width:70px; margin-top:3px; color:#666666; padding-left:18px; margin-left:10px; border-right:#666666 solid 1px;}
+.tops ul li.f4 a{ background:url(img/user.gif) no-repeat; width:30px;}
+.tops ul li.s3 a{ background:url(img/phone.gif) no-repeat; width:35px;}
+.tops ul li.t2 a{ background:url(img/document.gif) no-repeat;}
+.tops ul li.o1 a{ background:url(img/mail.gif) no-repeat;}
+
+.logo{ margin-top:15px;}
+.logo img{ margin-left:10px;}
+#Layer1 {
+	position:absolute;
+	width:170px;
+	height:18px;
+	z-index:1;
+	left: 703px;
+	top: 85px;
+}
+#Layer2 {
+	position:absolute;
+	width:52px;
+	height:25px;
+	z-index:2;
+	left: 857px;
+	top: 78px;
+}
+
+.menu{ height:42px;  width:100%;  background:url(img/menu1.png) repeat-x; font-size:16px; margin-top:15px;}
+.menu ul li{ float:left;  margin-top:10px; display:block; width:125px; height:22px; text-align:center; border-right:#333333 solid 1px;}
+.menu ul li a{ color:#FFFFFF;  width:120px;}
+.menu ul li a:hover{ color:#FF3300;}
+
+.daohang{ color:#666666;}
+
+.fumenu{ width:20%; margin-left:2px; border:#CCCCCC solid 1px; margin-top:10px; float:left;}
+.title{background:url(img/menu2.png); height:30px;}
+.title span.left{display:block;background:url(img/concenr.png) no-repeat;height:20px;padding-left:5px;padding-top:10px; color:#333333;}
+.fumenu ul li{ background:url(img/li.gif) no-repeat left center;}
+.fumenu ul li a{ display:block; margin-left:18px; margin-top:15px;}
+
+.title1{background:url(img/menu2.png); height:30px; margin-top:10px;}
+.title1 span.left1{display:block;background:url(img/concenr.png) no-repeat;height:20px;padding-left:5px;padding-top:10px; color:#333333;}
+.fumenu ul li{ background:url(img/li.gif) no-repeat left center;}
+.fumenu ul li a{ display:block; margin-left:18px; margin-top:15px; color:#333333;}
+
+.title2{background:url(img/menu2.png); height:30px; margin-top:10px;}
+.title2 span.left2{display:block;background:url(img/concenr.png) no-repeat;height:20px;padding-left:5px;padding-top:10px; color:#333333;}
+.fumenu ul li{ background:url(img/li.gif) no-repeat left center;}
+.rightbox1 ul li a{ display:block; margin-left:18px; margin-top:15px; color:#333333;}
+.rightbox1 ul li.l1 a{ margin-bottom:10px;}
+.ts{ margin-top:20px; margin-left:20px; height:120px;}
+.ps{ margin-top:10px;};
+.wu img{ color:#FFFFFF;} 
+
+.rightdabox{ width:100%;}
+.rightbox{ float:right; height:550px; width:70%;border:#CCCCCC solid 1px;}
+
+.box1{background:url(img/concenr.png) repeat-x; height:30px;}
+.box1 strong{ float:right; margin-top:8px; color:#333333; margin-right:10px;}
+.leftbox{width:100px;; float:left;}
+.leftbox ul { padding:0px; margin:0px; list-style:none; text-align:center; }
+.leftbox li { float:left; width:100px;}
+.leftbox ul li a { display:block; font-size:12px; border:0px solid #ccc; background:#669999; height:23px; margin-top:8px; margin-left:3px; padding:3px; text-decoration:none; color:#333333;}
+.leftbox ul li a:hover { background-color:#ddd;}
+.leftbox ul li ul { display:none; top:20px;}
+.leftbox li:hover ul,li.over ul {display:block;}
+
+.rightbox1{width:83%; margin-top:8px; float:right;}
+.rightbox2{ width:100%; height:28px; background:#669999;}
+.rightbox2 center h3{ padding-top:7px;}
+.rightmenu{ width:100%; height:40px;}
+.rightbox1 ul li{ float:left; margin-left:90px; color:#666666; margin-top:10px;}
+.rightbox1 ul li.one{ margin-left:20px;}
+.rightbox1 .qiche1{ background:url(img/豪车1.jpg) no-repeat; width:100%; height:110px;}
+.rightbox1 .qiche1 ul li{ float:left; margin-left:80px; margin-top:40px;}
+.rightbox1 .qiche1 ul li.one1{ margin-left:170px; color:#3366FF;}
+.rightbox1 .qiche1 ul li.two{ margin-left:100px; color:#FF0000;}
+
+.rightbox1 .qiche2{ background:url(img/豪车4.jpg) no-repeat; width:100%; height:110px;}
+.rightbox1 .qiche2 ul li{ float:left; margin-left:80px; margin-top:40px;}
+.rightbox1 .qiche2 ul li.one2{ margin-left:170px; color:#3366FF;}
+.rightbox1 .qiche2 ul li.two1{ margin-left:100px; color:#FF0000;}
+
+.rightbox1 .qiche3{ background:url(img/豪车5.jpg) no-repeat; width:100%; height:110px;}
+.rightbox1 .qiche3 ul li{ float:left; margin-left:80px; margin-top:40px;}
+.rightbox1 .qiche3 ul li.one3{ margin-left:170px; color:#3366FF;}
+.rightbox1 .qiche3 ul li.two2{ margin-left:100px; color:#FF0000;}
+
+.rightbox1 .qiche4{ background:url(img/豪车6.jpg) no-repeat; width:100%; height:110px;}
+.rightbox1 .qiche4 ul li{ float:left; margin-left:80px; margin-top:40px;}
+.rightbox1 .qiche4 ul li.one4{ margin-left:170px; color:#3366FF;}
+.rightbox1 .qiche4 ul li.two3{ margin-left:100px; color:#FF0000;}
+.box3{ border:#333333 solid 0px; width:100%; height:200px; clear:both;}
+.box3 h3{ padding:30px;}
+
+a{ text-decoration:none;}
+#Marquee_1_1{ width:100%; margin:0 auto;}
+.photos {
+	background: #FFF;
+	overflow: hidden;
+	border-bottom: 1px dashed #CCC;
+}
+.photos img {
+	width: 140px;
+	height: 110px;
+	border: none;
+}
+.bt{ width:700px; height:100px; margin:0 auto; height:42px;   font-size:16px; margin-top:15px;}
+
+.bt ul li{ float:left;  margin-top:10px; display:block; width:90px; height:22px; text-align:center; border-right:#666666 solid 1px;}
+.bt ul li a{ color:#0066CC;  width:120px;}
+
+.bt1{ height:70px; width:100%; color:#999999; clear:both; margin-top:5px;}
+.bt1 center{ padding-top:5px; color:#999999;}
+.f{height:1px; clear:both;}

@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * 
+ *                                 
+$hook['post_controller'] = array(
+                                'class'    => 'htmlclear',
+                                'function' => 'html_clear',
+                                'filename' => 'htmlclear.php',
+                                'filepath' => '../include',
+                                'params'   => array()
+                                );   
+ * 
+ *
+ */
+class htmlclear {
+	
+	
+
+	/**
+	 * 
+	 */
+	function __construct() {
+		
+	//TODO - Insert your code here
+	}
+	
+	/**
+	 * 清除html中空格、回车等 
+	 * 
+	 * http://codeigniter.org.cn/user_guide/libraries/output.html
+	 *
+	 */
+	function html_clear() {
+		$this->CI = & get_instance ();
+		$string = $this->CI->output->get_output ();
+		$this->CI->output->set_output ( $this->compress_html($string));
+	}
+	
+	/**
+	 * 压缩html : 清除换行符,清除制表符,去掉注释标记  
+	 * @param   $string  
+	 * @return  压缩后的$string 
+	 * */
+	function compress_html($string) {
+		
+		$string = str_replace ( "\r\n", '', $string ); //清除换行符  
+		$string = str_replace ( "\n", '', $string ); //清除换行符  
+		$string = str_replace ( "\t", '', $string ); //清除制表符  
+		 
+	
+		
+		$pattern = array ("/> *([^ ]*) *</", "/[\\s]+/", "/<!--[^!]*-->/", "/\" /", "/ \"/", "'/\\*[^*]*\\*/'" );//去掉注释标记  
+		$replace = array (">\\1<", " ", "", "\"", "\"", "" );
+		return preg_replace ( $pattern, $replace, $string );
+		
+		/*$i = array('/>[^S ]+/s','/[^S ]+</s','/(s)+/s');
+        $ii = array('>','<','1');
+        return preg_replace($i, $ii, $string);*/
+
+		//$string = str_replace(array('<!--<!---->','<!---->',"\r\n\r\n","\r\n","\n","   ","\t"),'',$string);
+	
+		
+		
+		/* $string = preg_replace("~>\\s+\r~", ">", preg_replace("~>\\s+\n~", ">", $string));
+		$string = preg_replace("~>\\s+<~", "><", $string); */
+		
+		//return $string;
+		//return $string;
+	}
+
+}
+
+?>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gou{ width:950px; margin:0 auto;height:300px; border:2px solid #F96}
+  .gou1{ width:100px;height:70px;}
+  .gou_biaoti{ width:950px;height:28px; background-color:#95c4f4; line-height:28px}
+	    .gou_biaoti span{ margin-left:120px; font-weight:bold}
+  .gou_con{  width:950px;height:120px; border:1px solid #F00; line-height:120px}
+

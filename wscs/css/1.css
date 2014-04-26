@@ -1,0 +1,43 @@
+/* CSS Document */
+#categories{width:1000px; margin:auto;}
+#categories .table{height:auto; border:1px solid #FF9900;width:1000px;}
+#categories .table .tr{height:auto;}
+#categories .table .td{border-right:1px solid #FF9900; width:100px; border-bottom:1px dotted #FF9900; background-color:#FFFFCC; text-align:center; vertical-align:top; color:#FF9900}
+#categories .table .td a{text-decoration:none;color:#666666; display:block;}
+#categories .table .td a:hover{color:#FF9900;}
+#categories .table .td_c{text-align:left; border-bottom:1px dotted #FF9900;vertical-align:top;} 
+#categories .table .span{margin:auto 8px;}
+#categories .table .span a{text-decoration:none;color:#666666;}
+#categories .table .span a:hover{color:#FF9900;}
+#product{width:1000px;margin:5px auto;height:1160px;}
+#product .xyy{text-align:center;height:30px; float:left; margin:auto 260px;}
+#product .xyy li{ list-style:none; float:left; border:1px solid #666666; margin:auto 4px;}
+#product .xyy li a{color:#666666; text-decoration:none;}
+#product .xyy li a:hover{color:#FF9900;}
+#product .ul{margin:0px; margin-left:-40px;}
+#product .li_1{ list-style:none; float:left; margin:5px;}
+#product .li_1 .p1{width:238px; height:360px;}
+#product .li_1 .p1 .tp{height:240px;border:1px solid #666666;}
+.tab_bt{width:238px;}
+.tab_bt .td1{text-align:left; font-size:20px; color:#666666;}
+.tab_bt .td2{text-align:right; font-size:12px; color:#666666;}
+.tab_bt .span_jg{font-family:"华文隶书"; font-size:22px; color:#FF0000; font-weight:bold;}
+.tab_bt .span_bt{font-size:12px;}
+.tab_bt .span_bt a{color:#333333;}
+.tab_bt .span_bt a:hover{color:#FF9900;}
+
+
+
+
+#cpNeirong{width:1000px; height:auto;margin:1px auto;}
+#cpNeirong .cp{width:1000px; height:350px; margin:auto;}
+#cpNeirong .cp .cp_t{width:900px; height:350px;}
+#cpNeirong .cp .cp_t .td3{height:290px; width:320px; border:1px solid #666666;}
+#cpNeirong .cp .cp_t .td4{ font-size:14px; font-family:"幼圆"; color:#666666;}
+.cp_b{height:autopx; width:auto;}
+.cp_b .td_b{color:#000000; font-family:"幼圆"; font-size:16px; font-weight:bold; height:auto;vertical-align: text-top;}
+.cp_b .td_j{font-size:20px; height:30px;}
+.cp_b .td_j span{color:#FF0000; font-size:42px; font-weight:bold;font-family:"华文隶书"; }
+.cp_b .td_x{font-size:10px; color:#666666;}
+.nst{height:40px; width:40px; float:left; margin:0px 4px; border:1px solid #666666;}
+#xinxi{height:1200px; width:1000px; border:1px solid #000000; margin:2px auto;}

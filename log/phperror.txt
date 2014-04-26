@@ -1,0 +1,18 @@
+[07-Nov-2013 11:41:14] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[07-Nov-2013 11:41:17] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[10-Nov-2013 14:55:44] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'pc_alipay/alipay.config.php' (include_path='.;C:\xampp\htdocs\fenxiao;C:\xampp\htdocs\fenxiao/include/;C:\xampp\htdocs\fenxiao/include/Class/;C:\xampp\htdocs\fenxiao/include/Class/PhpMailer') in C:\xampp\htdocs\fenxiao\app\controllers\fenxiaopay.php on line 8
+[13-Nov-2013 17:05:34] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:09:34] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:10:21] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:10:22] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:12:25] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:12:26] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:12:26] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:12:26] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:13:54] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:13:55] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[14-Nov-2013 10:13:55] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[30-Dec-2013 10:40:45] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[30-Dec-2013 10:40:48] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[30-Dec-2013 10:40:49] PHP Fatal error:  Class 'Redis' not found in C:\xampp\htdocs\fenxiao\include\Class\Nosqlhelp.php on line 48
+[19-Feb-2014 20:43:26] PHP Fatal error:  Class 'TxhhController' not found in D:\soft\phpStorm\phpStorm\shop\shop\app\controllers\supplier.php on line 8
