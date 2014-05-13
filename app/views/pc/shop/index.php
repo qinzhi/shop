@@ -98,12 +98,12 @@
             </div>
 
         </li>
-        <li><a href="http://taoth.cn/shop/index.php/courier/index">快递在线</a>
-            <div class="pos_a">
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/index">快递在线</a>
+            <div class="pos_a">    
                 <ul id="nav">
 
-                    <li><a href="http://taoth.cn/shop/index.php/courier/donate">快递查询</a></li>
-                    <li><a href="http://taoth.cn/shop/index.php/courier/donate">快递订购</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递查询</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递订购</a></li>
 
 
 
