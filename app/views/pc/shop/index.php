@@ -99,7 +99,7 @@
 
         </li>
         <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/index">快递在线</a>
-            <div class="pos_a">    
+            <div class="pos_a">
                 <ul id="nav">
 
                     <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递查询</a></li>
