@@ -4,7 +4,7 @@
 * Author: Simon Jarvis 
 * Copyright: 2006 Simon Jarvis 
 * Date: 08/11/06 
-* Link: http://www.white-hat-web-design.co.uk/articles/php-image-resizing.php 
+* Link: http://www.white-hat-web-design.co.uk/articles/php-images-resizing.php
 * 
 * This program is free software; you can redistribute it and/or 
 * modify it under the terms of the GNU General Public License 

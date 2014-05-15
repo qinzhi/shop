@@ -450,7 +450,7 @@ class CI_Security {
 		 * Images are Handled in a Special Way
 		 * - Essentially, we want to know that after all of the character
 		 * conversion is done whether any unwanted, likely XSS, code was found.
-		 * If not, we return TRUE, as the image is clean.
+		 * If not, we return TRUE, as the images is clean.
 		 * However, if the string post-conversion does not matched the
 		 * string post-removal of XSS, then it fails, as there was unwanted XSS
 		 * code found and removed/changed during processing.
@@ -597,7 +597,7 @@ class CI_Security {
 	 *		<a |style="document.write('hello'); alert('world');"| class="link">
 	 *
 	 * @param string $str The string to check
-	 * @param boolean $is_image TRUE if this is an image
+	 * @param boolean $is_image TRUE if this is an images
 	 * @return string The string with the evil attributes removed
 	 */
 	protected function _remove_evil_attributes($str, $is_image)
@@ -692,10 +692,10 @@ class CI_Security {
 	/**
 	 * JS Image Removal
 	 *
-	 * Callback function for xss_clean() to sanitize image tags
+	 * Callback function for xss_clean() to sanitize images tags
 	 * This limits the PCRE backtracks, making it more performance friendly
 	 * and prevents PREG_BACKTRACK_LIMIT_ERROR from being triggered in
-	 * PHP 5.2+ on image tag heavy strings
+	 * PHP 5.2+ on images tag heavy strings
 	 *
 	 * @param	array
 	 * @return	string

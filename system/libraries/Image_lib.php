@@ -47,7 +47,7 @@ class CI_Image_lib {
 	var $wm_type			= 'text';		// Type of watermarking.  Options:  text/overlay
 	var $wm_x_transp		= 4;
 	var $wm_y_transp		= 4;
-	var $wm_overlay_path	= '';			// Watermark image path
+	var $wm_overlay_path	= '';			// Watermark images path
 	var $wm_font_path		= '';			// TT font
 	var $wm_font_size		= 17;			// Font size (different versions of GD will either use points or pixels)
 	var $wm_vrt_alignment	= 'B';			// Vertical alignment:   T M B
@@ -58,7 +58,7 @@ class CI_Image_lib {
 	var $wm_font_color		= '#ffffff';	// Text color
 	var $wm_shadow_color	= '';			// Dropshadow color
 	var $wm_shadow_distance	= 2;			// Dropshadow distance
-	var $wm_opacity			= 50;			// Image opacity: 1 - 100  Only works with image
+	var $wm_opacity			= 50;			// Image opacity: 1 - 100  Only works with images
 
 	// Private Vars
 	var $source_folder		= '';
@@ -95,7 +95,7 @@ class CI_Image_lib {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Initialize image properties
+	 * Initialize images properties
 	 *
 	 * Resets values in case this class is used in a loop
 	 *
@@ -118,7 +118,7 @@ class CI_Image_lib {
 	// --------------------------------------------------------------------
 
 	/**
-	 * initialize image preferences
+	 * initialize images preferences
 	 *
 	 * @access	public
 	 * @param	array
@@ -138,7 +138,7 @@ class CI_Image_lib {
 		}
 
 		/*
-		 * Is there a source image?
+		 * Is there a source images?
 		 *
 		 * If not, there's no reason to continue
 		 *
@@ -152,8 +152,8 @@ class CI_Image_lib {
 		/*
 		 * Is getimagesize() Available?
 		 *
-		 * We use it to determine the image properties (width/height).
-		 * Note:  We need to figure out how to determine image
+		 * We use it to determine the images properties (width/height).
+		 * Note:  We need to figure out how to determine images
 		 * properties using ImageMagick and NetPBM
 		 *
 		 */
@@ -168,7 +168,7 @@ class CI_Image_lib {
 		/*
 		 * Set the full server path
 		 *
-		 * The source image may or may not contain a path.
+		 * The source images may or may not contain a path.
 		 * Either way, we'll try use realpath to generate the
 		 * full server path in order to more reliably read it.
 		 *
@@ -193,10 +193,10 @@ class CI_Image_lib {
 		}
 
 		/*
-		 * Assign the "new" image name/path
+		 * Assign the "new" images name/path
 		 *
 		 * If the user has set a "new_image" name it means
-		 * we are making a copy of the source image. If not
+		 * we are making a copy of the source images. If not
 		 * it means we are altering the original.  We'll
 		 * set the destination filename and path accordingly.
 		 *
@@ -243,9 +243,9 @@ class CI_Image_lib {
 		 * Compile the finalized filenames/paths
 		 *
 		 * We'll create two master strings containing the
-		 * full server path to the source image and the
-		 * full server path to the destination image.
-		 * We'll also split the destination image name
+		 * full server path to the source images and the
+		 * full server path to the destination images.
+		 * We'll also split the destination images name
 		 * so we can insert the thumbnail marker if needed.
 		 *
 		 */
@@ -263,11 +263,11 @@ class CI_Image_lib {
 		$this->full_dst_path = $this->dest_folder.$filename.$this->thumb_marker.$file_ext;
 
 		/*
-		 * Should we maintain image proportions?
+		 * Should we maintain images proportions?
 		 *
 		 * When creating thumbs or copies, the target width/height
 		 * might not be in correct proportion with the source
-		 * image's width/height.  We'll recalculate it here.
+		 * images's width/height.  We'll recalculate it here.
 		 *
 		 */
 		if ($this->maintain_ratio === TRUE && ($this->width != '' AND $this->height != ''))
@@ -487,7 +487,7 @@ class CI_Image_lib {
 			$this->y_axis = 0;
 		}
 
-		//  Create the image handle
+		//  Create the images handle
 		if ( ! ($src_img = $this->image_create_gd()))
 		{
 			return FALSE;
@@ -521,7 +521,7 @@ class CI_Image_lib {
 
 		$copy($dst_img, $src_img, 0, 0, $this->x_axis, $this->y_axis, $this->width, $this->height, $this->orig_width, $this->orig_height);
 
-		//  Show the image
+		//  Show the images
 		if ($this->dynamic_output == TRUE)
 		{
 			$this->image_display_gd($dst_img);
@@ -691,7 +691,7 @@ class CI_Image_lib {
 			return FALSE;
 		}
 
-		// With NetPBM we have to create a temporary image.
+		// With NetPBM we have to create a temporary images.
 		// If you try manipulating the original it fails so
 		// we have to rename the temp file.
 		copy ($this->dest_folder.'netpbm.tmp', $this->full_dst_path);
@@ -711,7 +711,7 @@ class CI_Image_lib {
 	 */
 	function image_rotate_gd()
 	{
-		//  Create the image handle
+		//  Create the images handle
 		if ( ! ($src_img = $this->image_create_gd()))
 		{
 			return FALSE;
@@ -813,7 +813,7 @@ class CI_Image_lib {
 			}
 		}
 
-		//  Show the image
+		//  Show the images
 		if ($this->dynamic_output == TRUE)
 		{
 			$this->image_display_gd($src_img);
@@ -876,25 +876,25 @@ class CI_Image_lib {
 			return FALSE;
 		}
 
-		//  Fetch source image properties
+		//  Fetch source images properties
 		$this->get_image_properties();
 
-		//  Fetch watermark image properties
+		//  Fetch watermark images properties
 		$props			= $this->get_image_properties($this->wm_overlay_path, TRUE);
 		$wm_img_type	= $props['image_type'];
 		$wm_width		= $props['width'];
 		$wm_height		= $props['height'];
 
-		//  Create two image resources
+		//  Create two images resources
 		$wm_img  = $this->image_create_gd($this->wm_overlay_path, $wm_img_type);
 		$src_img = $this->image_create_gd($this->full_src_path);
 
 		// Reverse the offset if necessary
-		// When the image is positioned at the bottom
+		// When the images is positioned at the bottom
 		// we don't want the vertical offset to push it
 		// further down.  We want the reverse, so we'll
 		// invert the offset.  Same with the horizontal
-		// offset when the image is at the right
+		// offset when the images is at the right
 
 		$this->wm_vrt_alignment = strtoupper(substr($this->wm_vrt_alignment, 0, 1));
 		$this->wm_hor_alignment = strtoupper(substr($this->wm_hor_alignment, 0, 1));
@@ -931,7 +931,7 @@ class CI_Image_lib {
 				break;
 		}
 
-		//  Build the finalized image
+		//  Build the finalized images
 		if ($wm_img_type == 3 AND function_exists('imagealphablending'))
 		{
 			@imagealphablending($src_img, TRUE);
@@ -941,10 +941,10 @@ class CI_Image_lib {
 		$rgba = imagecolorat($wm_img, $this->wm_x_transp, $this->wm_y_transp);
 		$alpha = ($rgba & 0x7F000000) >> 24;
 
-		// make a best guess as to whether we're dealing with an image with alpha transparency or no/binary transparency
+		// make a best guess as to whether we're dealing with an images with alpha transparency or no/binary transparency
 		if ($alpha > 0)
 		{
-			// copy the image directly, the image's alpha transparency being the sole determinant of blending
+			// copy the images directly, the images's alpha transparency being the sole determinant of blending
 			imagecopy($src_img, $wm_img, $x_axis, $y_axis, 0, 0, $wm_width, $wm_height);
 		}
 		else
@@ -954,7 +954,7 @@ class CI_Image_lib {
 			imagecopymerge($src_img, $wm_img, $x_axis, $y_axis, 0, 0, $wm_width, $wm_height, $this->wm_opacity);
 		}
 
-		//  Output the image
+		//  Output the images
 		if ($this->dynamic_output == TRUE)
 		{
 			$this->image_display_gd($src_img);
@@ -994,7 +994,7 @@ class CI_Image_lib {
 			return FALSE;
 		}
 
-		//  Fetch source image properties
+		//  Fetch source images properties
 		$this->get_image_properties();
 
 		// Set RGB values for text and shadow
@@ -1013,7 +1013,7 @@ class CI_Image_lib {
 		$drp_color	= imagecolorclosest($src_img, $R2, $G2, $B2);
 
 		// Reverse the vertical offset
-		// When the image is positioned at the bottom
+		// When the images is positioned at the bottom
 		// we don't want the vertical offset to push it
 		// further down.  We want the reverse, so we'll
 		// invert the offset.  Note: The horizontal
@@ -1084,7 +1084,7 @@ class CI_Image_lib {
 				break;
 		}
 
-		//  Add the text to the source image
+		//  Add the text to the source images
 		if ($this->wm_use_truetype)
 		{
 			if ($this->wm_use_drop_shadow)
@@ -1098,7 +1098,7 @@ class CI_Image_lib {
 				imagestring($src_img, $this->wm_font_size, $x_axis, $y_axis, $this->wm_text, $txt_color);
 		}
 
-		//  Output the final image
+		//  Output the final images
 		if ($this->dynamic_output == TRUE)
 		{
 			$this->image_display_gd($src_img);
@@ -1118,8 +1118,8 @@ class CI_Image_lib {
 	/**
 	 * Create Image - GD
 	 *
-	 * This simply creates an image resource handle
-	 * based on the type of image being processed
+	 * This simply creates an images resource handle
+	 * based on the type of images being processed
 	 *
 	 * @access	public
 	 * @param	string
@@ -1173,9 +1173,9 @@ class CI_Image_lib {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Write image file to disk - GD
+	 * Write images file to disk - GD
 	 *
-	 * Takes an image resource as input and writes the file
+	 * Takes an images resource as input and writes the file
 	 * to the specified destination
 	 *
 	 * @access	public
@@ -1237,7 +1237,7 @@ class CI_Image_lib {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Dynamically outputs an image
+	 * Dynamically outputs an images
 	 *
 	 * @access	public
 	 * @param	resource
@@ -1258,7 +1258,7 @@ class CI_Image_lib {
 				break;
 			case 3		:	imagepng($resource);
 				break;
-			default		:	echo 'Unable to display the image';
+			default		:	echo 'Unable to display the images';
 				break;
 		}
 	}
@@ -1269,8 +1269,8 @@ class CI_Image_lib {
 	 * Re-proportion Image Width/Height
 	 *
 	 * When creating thumbs, the desired width/height
-	 * can end up warping the image due to an incorrect
-	 * ratio between the full-sized image and the thumb.
+	 * can end up warping the images due to an incorrect
+	 * ratio between the full-sized images and the thumb.
 	 *
 	 * This function lets us re-proportion the width/height
 	 * if users choose to maintain the aspect ratio when resizing.
@@ -1312,7 +1312,7 @@ class CI_Image_lib {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get image properties
+	 * Get images properties
 	 *
 	 * A helper function that gets info about the file
 	 *
@@ -1338,7 +1338,7 @@ class CI_Image_lib {
 
 		$types = array(1 => 'gif', 2 => 'jpeg', 3 => 'png');
 
-		$mime = (isset($types[$vals['2']])) ? 'image/'.$types[$vals['2']] : 'image/jpg';
+		$mime = (isset($types[$vals['2']])) ? 'images/'.$types[$vals['2']] : 'images/jpg';
 
 		if ($return == TRUE)
 		{

@@ -3,7 +3,7 @@
  *
  * Type:     function
  * Name:     resize_image
- * Purpose:  Outputs resized image  based on values passed.
+ * Purpose:  Outputs resized images  based on values passed.
  * Input:
  *			- img_src tag path
  *			- directory = full directory path where images are located
@@ -11,22 +11,22 @@
  *			- filename = Name of the file
  *			- xscale = Image max width size default 2000 px
  *			- yscale = Image max height size default 2000 px
- *			- thumbname = prefix name for new image, the thumb name is not needed if you are using a return type of 1
- *			- returntype =  1 - return image tag with full size image name and path but with height and width attributes adjusted
- *							0 - resize image and store thumbnail in directory and return that thumbnail img tag.  Default setting
- *			- url = Optional URL to download image from for resizing if the image doesn't exist in the image directory (CURL must be installed to use this feature)
+ *			- thumbname = prefix name for new images, the thumb name is not needed if you are using a return type of 1
+ *			- returntype =  1 - return images tag with full size images name and path but with height and width attributes adjusted
+ *							0 - resize images and store thumbnail in directory and return that thumbnail img tag.  Default setting
+ *			- url = Optional URL to download images from for resizing if the images doesn't exist in the images directory (CURL must be installed to use this feature)
  *			- binpath = Optional path to the ImageMagick mogrify command.  If missing slower GD code will be used.
- *			- alt = Optional alt attribute for the img tag Default is "image"
+ *			- alt = Optional alt attribute for the img tag Default is "images"
  *			- border = Optional border attribute for img tag Default is 0
  *			- class = Optional class attribute for img tag
- *			- daystokeep = Optional number of days to cache the thumbnail image.  Default is 5 days
+ *			- daystokeep = Optional number of days to cache the thumbnail images.  Default is 5 days
  *
  * Examples:<br>
  * <pre>
  * {resize_image img_src="/thumbnails/" directory="/html/mysite/ad_images/" thumbdir="/html/mysite/thumbnails/" filename="Myfile.jpg" xscale="150" yscale="200" thumbname="thumb_"}
  * </pre>
  *
- * Output <img src="/thumbnails/thumb_Myfile.jpg" width="150" height="200" alt="image" border="0">
+ * Output <img src="/thumbnails/thumb_Myfile.jpg" width="150" height="200" alt="images" border="0">
  *
  * Author:   Rick Thomson rick@oznet.com
  * Author:   Mark Dickenson akapanamajack@sourceforge.net
@@ -78,7 +78,7 @@ function tpl_function_resize_image($params, &$tpl)
 
 	if (empty($alt))
 	{
-		$alt = "image";
+		$alt = "images";
 	}
 
 	if (empty($border))

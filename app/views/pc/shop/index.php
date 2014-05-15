@@ -52,12 +52,12 @@
 
 
 
-        <li><a href="#">网上超市</a>
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/wscs/index">网上超市</a>
             <div class="pos_a">
                 <ul id="nav">
 
-                    <li><a href="#">生活用品</a></li>
-                    <li><a href="#">精美礼品</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/wscs/index">生活用品</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/wscs/index">精美礼品</a></li>
 
                 </ul>
             </div>

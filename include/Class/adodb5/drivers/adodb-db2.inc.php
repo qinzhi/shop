@@ -486,7 +486,7 @@ See http://msdn.microsoft.com/library/default.asp?url=/library/en-us/db2/htm/db2
 		case -97:
 		case -1: //text
 			return 'X';
-		case -4: //image
+		case -4: //images
 			return 'B';
 				
 		case 9:	

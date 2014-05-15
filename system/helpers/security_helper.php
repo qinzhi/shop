@@ -32,7 +32,7 @@
  *
  * @access	public
  * @param	string
- * @param	bool	whether or not the content is an image file
+ * @param	bool	whether or not the content is an images file
  * @return	string
  */
 if ( ! function_exists('xss_clean'))

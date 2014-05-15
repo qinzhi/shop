@@ -532,7 +532,7 @@ class ADODB_odbtp extends ADOConnection{
 		$conn->UpdateBlob('blobtable','blobcol',$blob,'id=1');
 	*/
 
-	function UpdateBlob($table,$column,$val,$where,$blobtype='image')
+	function UpdateBlob($table,$column,$val,$where,$blobtype='images')
 	{
 		$sql = "UPDATE $table SET $column = ? WHERE $where";
 		if( !($stmt = @odbtp_prepare($sql, $this->_connectionID)) )

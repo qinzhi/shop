@@ -54,7 +54,7 @@
   - Added GD Font support if ttf support is not available.  Can use internal GD fonts or load new ones.
   - Added the ability to set line thickness
   - Added option for drawing arced lines over letters
-  - Added ability to choose image type for output
+  - Added ability to choose images type for output
 
 */
 
@@ -82,21 +82,21 @@ define('SI_IMAGE_GIF',  3);
 class Securimage {
 
   /**
-   * The desired width of the CAPTCHA image.
+   * The desired width of the CAPTCHA images.
    *
    * @var int
    */
   var $image_width = 175;
 
   /**
-   * The desired width of the CAPTCHA image.
+   * The desired width of the CAPTCHA images.
    *
    * @var int
    */
   var $image_height = 45;
 
   /**
-   * The image format for output.<br />
+   * The images format for output.<br />
    * Valid options: SI_IMAGE_PNG, SI_IMAGE_JPG, SI_IMAGE_GIF
    *
    * @var int
@@ -111,7 +111,7 @@ class Securimage {
   var $code_length = 4;
 
   /**
-   * The character set for individual characters in the image.<br />
+   * The character set for individual characters in the images.<br />
    * Letters are converted to uppercase.<br />
    * The font must support the letters or there may be problematic substitutions.
    *
@@ -196,8 +196,8 @@ class Securimage {
   var $text_angle_maximum = 20;
 
   /**
-   * The X-Position on the image where letter drawing will begin.<br />
-   * This value is in pixels from the left side of the image.
+   * The X-Position on the images where letter drawing will begin.<br />
+   * This value is in pixels from the left side of the images.
    *
    * @var int
    */
@@ -224,7 +224,7 @@ class Securimage {
   var $text_maximum_distance = 33;
 
   /**
-   * The background color for the image.<br />
+   * The background color for the images.<br />
    * This should be specified in HTML hex format.<br />
    * Make sure to include the preceding # sign!
    *
@@ -280,7 +280,7 @@ class Securimage {
 
   // Line options
   /**
-   * Draw vertical and horizontal lines on the image.
+   * Draw vertical and horizontal lines on the images.
    *
    * @see Securimage::$line_color
    * @see Securimage::$line_distance
@@ -291,7 +291,7 @@ class Securimage {
   var $draw_lines = true;
 
   /**
-   * The color of the lines drawn on the image.<br />
+   * The color of the lines drawn on the images.<br />
    * Use HTML hex format with preceding # sign.
    *
    * @see Securimage::$draw_lines
@@ -318,7 +318,7 @@ class Securimage {
   var $line_thickness = 1;
 
   /**
-   * Set to true to draw angled lines on the image in addition to the horizontal and vertical lines.
+   * Set to true to draw angled lines on the images in addition to the horizontal and vertical lines.
    *
    * @see Securimage::$draw_lines
    * @var boolean
@@ -327,8 +327,8 @@ class Securimage {
 
   /**
    * Draw the lines over the text.<br />
-   * If fales lines will be drawn before putting the text on the image.<br />
-   * This can make the image hard for humans to read depending on the line thickness and distance.
+   * If fales lines will be drawn before putting the text on the images.<br />
+   * This can make the images hard for humans to read depending on the line thickness and distance.
    *
    * @var boolean
    */
@@ -336,7 +336,7 @@ class Securimage {
 
   /**
    * For added security, it is a good idea to draw arced lines over the letters to make it harder for bots to segment the letters.<br />
-   * Two arced lines will be drawn over the text on each side of the image.<br />
+   * Two arced lines will be drawn over the text on each side of the images.<br />
    * This is currently expirimental and may be off in certain configurations.
    *
    * @var boolean
@@ -366,7 +366,7 @@ class Securimage {
   //There should be no need to edit below unless you really know what you are doing.
 
   /**
-   * The gd image resource.
+   * The gd images resource.
    *
    * @access private
    * @var resource
@@ -374,7 +374,7 @@ class Securimage {
   var $im;
 
   /**
-   * The background image resource
+   * The background images resource
    *
    * @access private
    * @var resource
@@ -424,7 +424,7 @@ class Securimage {
   }
 
   /**
-   * Generate a code and output the image to the browser.
+   * Generate a code and output the images to the browser.
    *
    * <code>
    *   <?php
@@ -434,7 +434,7 @@ class Securimage {
    *   ?>
    * </code>
    *
-   * @param string $background_image  The path to an image to use as the background for the CAPTCHA
+   * @param string $background_image  The path to an images to use as the background for the CAPTCHA
    */
   function show($background_image = "")
   {
@@ -467,7 +467,7 @@ class Securimage {
   }
 
   /**
-   * Generate and output the image
+   * Generate and output the images
    *
    * @access private
    *
@@ -500,7 +500,7 @@ class Securimage {
   }
 
   /**
-   * Set the background of the CAPTCHA image
+   * Set the background of the CAPTCHA images
    *
    * @access private
    *
@@ -573,7 +573,7 @@ class Securimage {
   }
 
   /**
-   * Draw lines on the image
+   * Draw lines on the images
    *
    * @access private
    *
@@ -605,7 +605,7 @@ class Securimage {
   }
 
   /**
-   * Draw the CAPTCHA code over the image
+   * Draw the CAPTCHA code over the images
    *
    * @access private
    *
@@ -732,7 +732,7 @@ class Securimage {
   }
 
   /**
-   * Output image to the browser
+   * Output images to the browser
    *
    * @access private
    *
@@ -748,17 +748,17 @@ class Securimage {
     switch($this->image_type)
     {
       case SI_IMAGE_JPEG:
-        header("Content-Type: image/jpeg");
+        header("Content-Type: images/jpeg");
         imagejpeg($this->im, null, 90);
         break;
 
       case SI_IMAGE_GIF:
-        header("Content-Type: image/gif");
+        header("Content-Type: images/gif");
         imagegif($this->im);
         break;
 
       default:
-        header("Content-Type: image/png");
+        header("Content-Type: images/png");
         imagepng($this->im);
         break;
     }

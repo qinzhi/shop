@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="2c397062-4929-43ea-a9cd-72f55185be7f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/CommonService.php" afterPath="$PROJECT_DIR$/include/CommonService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/HttpClient.class.php" afterPath="$PROJECT_DIR$/include/Class/HttpClient.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Image_lib.php" afterPath="$PROJECT_DIR$/system/libraries/Image_lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Input.php" afterPath="$PROJECT_DIR$/system/libraries/Input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/javascript/Jquery.php" afterPath="$PROJECT_DIR$/system/libraries/javascript/Jquery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/core/Security.php" afterPath="$PROJECT_DIR$/system/core/Security.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Typography.php" afterPath="$PROJECT_DIR$/system/libraries/Typography.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Upload.php" afterPath="$PROJECT_DIR$/system/libraries/Upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Xmlrpc.php" afterPath="$PROJECT_DIR$/system/libraries/Xmlrpc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-ads.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-ads.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-db2.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-db2.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-mssql.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-mssql.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-mssqlnative.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-mssqlnative.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-odbc.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-odbc.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-odbtp.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/drivers/adodb-odbtp.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/helpers/captcha_helper.php" afterPath="$PROJECT_DIR$/system/helpers/captcha_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/plugins/captcha_pi.php" afterPath="$PROJECT_DIR$/system/plugins/captcha_pi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/PHPMailer/class.phpmailer.php" afterPath="$PROJECT_DIR$/include/Class/PHPMailer/class.phpmailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/TemplateLite/plugins/function.html_image.php" afterPath="$PROJECT_DIR$/include/Class/TemplateLite/plugins/function.html_image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/TemplateLite/plugins/function.resize_image.php" afterPath="$PROJECT_DIR$/include/Class/TemplateLite/plugins/function.resize_image.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/htmlclear.php" afterPath="$PROJECT_DIR$/include/htmlclear.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/imagesample.php" afterPath="$PROJECT_DIR$/include/Class/imagesample.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/language/english/imglib_lang.php" afterPath="$PROJECT_DIR$/system/language/english/imglib_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/checkcode/securimage.php" afterPath="$PROJECT_DIR$/include/checkcode/securimage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/helpers/security_helper.php" afterPath="$PROJECT_DIR$/system/helpers/security_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/helpers/smiley_helper.php" afterPath="$PROJECT_DIR$/system/helpers/smiley_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Class/adodb5/tohtml.inc.php" afterPath="$PROJECT_DIR$/include/Class/adodb5/tohtml.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/language/english/upload_lang.php" afterPath="$PROJECT_DIR$/system/language/english/upload_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/helpers/url_helper.php" afterPath="$PROJECT_DIR$/system/helpers/url_helper.php" />
     </list>
     <list id="2a21fca4-02dd-4390-a805-9d1a7ed35952" name="Failed commit: Default" comment="" />
     <ignored path="shop.iws" />
@@ -10,7 +39,7 @@
     <file path="/Dummy.txt" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469763801" ignored="false" />
     <file path="/shop.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334037918" ignored="false" />
     <file path="/registered.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334216136" ignored="false" />
-    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159900766" ignored="false" />
+    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161455082" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/manager/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/controllers/hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470245061" ignored="false" />
@@ -19,6 +48,13 @@
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/hyh/message_centeradd_hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470099464" ignored="false" />
     <file path="/message_centeradd_hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470099464" ignored="false" />
     <file path="/jyjz.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159024501" ignored="false" />
+    <file path="/wscs.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400160921469" ignored="false" />
+    <file path="$PROJECT_DIR$/source/js/jquery132min.js" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203117" ignored="false" />
+    <file path="$PROJECT_DIR$/source/js/jquery-1.5.1.js" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203117" ignored="false" />
+    <file path="$PROJECT_DIR$/source/js/index_js/jquery-1.2.6.min.js" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203117" ignored="false" />
+    <file path="$PROJECT_DIR$/app/config/mimes.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203118" ignored="false" />
+    <file path="$PROJECT_DIR$/app/config/smileys.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203118" ignored="false" />
+    <file path="$PROJECT_DIR$/source/js/jquery-1.4.2.js" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400161203119" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +77,16 @@
       <file leaf-file-name="jyjz.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/jyjz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="557" selection-end="561" vertical-scroll-proportion="-8.821428">
+            <state line="13" column="36" selection-start="0" selection-end="583" vertical-scroll-proportion="-8.821428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="0.116564415">
+            <state line="58" column="75" selection-start="1954" selection-end="1954" vertical-scroll-proportion="-5.735849">
               <folding>
                 <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,10 +95,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jyjz.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/jyjz/css/jyjz.css">
+      <file leaf-file-name="wscs.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/wscs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="58" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.0">
+            <state line="12" column="18" selection-start="516" selection-end="521" vertical-scroll-proportion="-8.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pc/wscs/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="0" selection-start="3289" selection-end="3289" vertical-scroll-proportion="-0.2822086">
+              <folding>
+                <element signature="n#style#0;n#div#5;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#10;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#li#6;n#ul#0;n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#li#7;n#ul#0;n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tzsc.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/wscs/css/tzsc.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="352" column="62" selection-start="17106" selection-end="17106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +130,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="69" selection-start="296" selection-end="309" vertical-scroll-proportion="-2.0357144">
+            <state line="104" column="80" selection-start="3981" selection-end="4028" vertical-scroll-proportion="-11.535714">
               <folding />
             </state>
           </provider>
@@ -87,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/Config.inc.php" />
-        <option value="$PROJECT_DIR$/app/controllers/supplier.php" />
         <option value="$PROJECT_DIR$/source/css/style.css" />
         <option value="$PROJECT_DIR$/app/views/pc/shop/registered.php" />
         <option value="$PROJECT_DIR$/app/controllers/shop.php" />
@@ -101,8 +158,10 @@
         <option value="$PROJECT_DIR$/app/views/pc/courier/about.php" />
         <option value="$PROJECT_DIR$/app/views/pc/courier/donate.php" />
         <option value="$PROJECT_DIR$/app/controllers/jyjz.php" />
+        <option value="$PROJECT_DIR$/app/controllers/wscs.php" />
         <option value="$PROJECT_DIR$/app/views/pc/shop/index.php" />
         <option value="$PROJECT_DIR$/app/views/pc/jyjz/index.php" />
+        <option value="$PROJECT_DIR$/app/views/pc/wscs/index.php" />
       </list>
     </option>
   </component>
@@ -186,25 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jyjz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shops" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jyjz" />
+              <option name="myItemId" value="wscs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -226,11 +267,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jyjz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="wscs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,28 +282,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shops" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,11 +314,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\wscs\images" />
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\wscs\image" />
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\wscs\css" />
       <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\images" />
       <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\css\js" />
-      <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\css" />
-      <recent name="D:\soft\phpStorm\phpStorm\shops" />
-      <recent name="D:\soft\phpStorm\phpStorm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz" />
@@ -473,9 +488,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32272726" sideWeight="0.99140894" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32272726" sideWeight="0.6701031" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -484,7 +500,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -552,25 +567,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/Config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.03696498" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Init.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="30" selection-start="7457" selection-end="7475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/courier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="2" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/courier/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="25" selection-start="448" selection-end="488" vertical-scroll-proportion="-1.8490566">
@@ -620,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/jyjz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="557" selection-end="561" vertical-scroll-proportion="-8.821428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/courier/programs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="33" selection-start="284" selection-end="310" vertical-scroll-proportion="-4.75">
@@ -648,19 +637,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/jyjz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="69" selection-start="296" selection-end="309" vertical-scroll-proportion="-2.0357144">
+        <state line="13" column="36" selection-start="0" selection-end="583" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/wscs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="516" selection-end="521" vertical-scroll-proportion="-8.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/wscs/css/tzsc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="62" selection-start="17106" selection-end="17106" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="0.116564415">
+        <state line="58" column="75" selection-start="1954" selection-end="1954" vertical-scroll-proportion="-5.735849">
           <folding>
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="80" selection-start="3981" selection-end="4028" vertical-scroll-proportion="-11.535714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pc/wscs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="0" selection-start="3289" selection-end="3289" vertical-scroll-proportion="-0.2822086">
+          <folding>
+            <element signature="n#style#0;n#div#5;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#6;n#ul#0;n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#7;n#ul#0;n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

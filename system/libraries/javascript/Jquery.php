@@ -723,7 +723,7 @@ class CI_Jquery extends CI_Javascript {
 		}
 		
 		$updater = "$($container).empty();\n"; // anything that was in... get it out
-		$updater .= "\t\t$($container).prepend(\"$loading_notifier\");\n"; // to replace with an image
+		$updater .= "\t\t$($container).prepend(\"$loading_notifier\");\n"; // to replace with an images
 
 		$request_options = '';
 		if ($options != '')

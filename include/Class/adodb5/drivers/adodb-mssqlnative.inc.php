@@ -430,7 +430,7 @@ class ADODB_mssqlnative extends ADOConnection {
 	
 	/* 
 		Unfortunately, it appears that mssql cannot handle varbinary > 255 chars
-		So all your blobs must be of type "image".
+		So all your blobs must be of type "images".
 		
 		Remember to set in php.ini the following...
 		

@@ -568,16 +568,16 @@ function ResizeImage($im, $maxwidth, $maxheight, $name) {
 
 function changeimagesize($imagetype, $tempfile, $filename, $resizewidth, $resizeheight) {
 	
-	// 生成图片的宽度  $_FILES ['image'] ['type']  $_FILES ['image'] ['tmp_name']
+	// 生成图片的宽度  $_FILES ['images'] ['type']  $_FILES ['images'] ['tmp_name']
 	//$resizewidth = 40;
 	// 生成图片的高度 
 	//$resizeheight = 80;
-	if ($imagetype == "image/pjpeg") {
+	if ($imagetype == "images/pjpeg") {
 		//echo $imagetype;
 		$im = imagecreatefromjpeg ( $tempfile );
-	} elseif ($imagetype == "image/x-png") {
+	} elseif ($imagetype == "images/x-png") {
 		$im = imagecreatefrompng ( $tempfile );
-	} elseif ($imagetype == "image/gif") {
+	} elseif ($imagetype == "images/gif") {
 		$im = imagecreatefromgif ( $tempfile );
 	}
 	

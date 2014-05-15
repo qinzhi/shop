@@ -4,19 +4,19 @@
  *
  * Type:     function
  * Name:     html_image
- * Purpose:  Outputs an image tag along with resized height/width
+ * Purpose:  Outputs an images tag along with resized height/width
  * Input:
  *           - url = the url of the picture
  *           - width = optional width
  *           - height = optional height
- *           - limit = boolean - will resize image to the above height
+ *           - limit = boolean - will resize images to the above height
  *                     and width if the above height and width are
  *                     smaller than the real height and width
  *           - border = optional size of the border, default is "0"
  *           - alt = optional alternate text to display
  * Examples:<br>
  * <pre>
- * {html_image url="http://www.yoursite.com/image.jpg"}
+ * {html_image url="http://www.yoursite.com/images.jpg"}
  * {html_image url="images/me.gif" alt="A picture of me!"}
  * </pre>
  * Author:   Paul Lockaby <paul@paullockaby.com>
@@ -143,7 +143,7 @@ function tpl_function_html_image($params, &$tpl)
 					if (isset($fin1_height) && isset($fin1_width) && isset($fin2_height) && isset($fin2_width))
 					{
 						// now check the difference between abs($fin1_height-$fin1_width) and abs($fin2_height-$fin2_width)
-						// since we obviously want the larger image, take whichever one has the smaller difference
+						// since we obviously want the larger images, take whichever one has the smaller difference
 						if (abs($fin1_height - $fin1_width) < abs($fin2_height - $fin2_width))
 						{
 							$new_height = $fin1_height;

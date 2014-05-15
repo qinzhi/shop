@@ -53,7 +53,7 @@ if ( ! function_exists('site_url'))
  * 
  * Create a local URL based on your basepath.
  * Segments can be passed in as a string or an array, same as site_url
- * or a URL to a file can be passed in, e.g. to an image file.
+ * or a URL to a file can be passed in, e.g. to an images file.
  *
  * @access	public
  * @param string

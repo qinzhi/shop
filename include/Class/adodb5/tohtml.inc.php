@@ -124,7 +124,7 @@ GLOBAL $gSQLMaxRows,$gSQLBlockRows,$ADODB_ROUND;
 				  }
 				}
 				$t = mime_content_type($tmpname);
-				$s .= (substr($t,0,5)=="image") ? " <td><img src='$tmpname' alt='$t'></td>\\n" : " <td><a
+				$s .= (substr($t,0,5)=="images") ? " <td><img src='$tmpname' alt='$t'></td>\\n" : " <td><a
 				href='$tmpname'>$t</a></td>\\n";
 				break;
 			*/

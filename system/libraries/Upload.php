@@ -247,7 +247,7 @@ class CI_Upload {
 			return FALSE;
 		}
 
-		// Are the image dimensions within the allowed size?
+		// Are the images dimensions within the allowed size?
 		// Note: This can fail if the server has an open_basdir restriction.
 		if ( ! $this->is_allowed_dimensions())
 		{
@@ -320,9 +320,9 @@ class CI_Upload {
 		}
 
 		/*
-		 * Set the finalized image dimensions
-		 * This sets the image width/height (assuming the
-		 * file was an image).  We use this information
+		 * Set the finalized images dimensions
+		 * This sets the images width/height (assuming the
+		 * file was an images).  We use this information
 		 * in the "data" function.
 		 */
 		$this->set_image_properties($this->upload_path.$this->file_name);
@@ -498,7 +498,7 @@ class CI_Upload {
 	/**
 	 * Set Image Properties
 	 *
-	 * Uses GD to determine the width/height/type of image
+	 * Uses GD to determine the width/height/type of images
 	 *
 	 * @param	string
 	 * @return	void
@@ -543,7 +543,7 @@ class CI_Upload {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Validate the image
+	 * Validate the images
 	 *
 	 * @return	bool
 	 */
@@ -552,23 +552,23 @@ class CI_Upload {
 		// IE will sometimes return odd mime-types during upload, so here we just standardize all
 		// jpegs or pngs to the same file type.
 
-		$png_mimes  = array('image/x-png');
-		$jpeg_mimes = array('image/jpg', 'image/jpe', 'image/jpeg', 'image/pjpeg');
+		$png_mimes  = array('images/x-png');
+		$jpeg_mimes = array('images/jpg', 'images/jpe', 'images/jpeg', 'images/pjpeg');
 
 		if (in_array($this->file_type, $png_mimes))
 		{
-			$this->file_type = 'image/png';
+			$this->file_type = 'images/png';
 		}
 
 		if (in_array($this->file_type, $jpeg_mimes))
 		{
-			$this->file_type = 'image/jpeg';
+			$this->file_type = 'images/jpeg';
 		}
 
 		$img_mimes = array(
-							'image/gif',
-							'image/jpeg',
-							'image/png',
+							'images/gif',
+							'images/jpeg',
+							'images/png',
 						);
 
 		return (in_array($this->file_type, $img_mimes, TRUE)) ? TRUE : FALSE;
@@ -656,7 +656,7 @@ class CI_Upload {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Verify that the image is within the allowed width/height
+	 * Verify that the images is within the allowed width/height
 	 *
 	 * @return	bool
 	 */
@@ -843,11 +843,11 @@ class CI_Upload {
 			ini_set('memory_limit', $new_memory); // When an integer is used, the value is measured in bytes. - PHP.net
 		}
 
-		// If the file being uploaded is an image, then we should have no problem with XSS attacks (in theory), but
-		// IE can be fooled into mime-type detecting a malformed image as an html file, thus executing an XSS attack on anyone
-		// using IE who looks at the image.  It does this by inspecting the first 255 bytes of an image.  To get around this
-		// CI will itself look at the first 255 bytes of an image to determine its relative safety.  This can save a lot of
-		// processor power and time if it is actually a clean image, as it will be in nearly all instances _except_ an
+		// If the file being uploaded is an images, then we should have no problem with XSS attacks (in theory), but
+		// IE can be fooled into mime-type detecting a malformed images as an html file, thus executing an XSS attack on anyone
+		// using IE who looks at the images.  It does this by inspecting the first 255 bytes of an images.  To get around this
+		// CI will itself look at the first 255 bytes of an images to determine its relative safety.  This can save a lot of
+		// processor power and time if it is actually a clean images, as it will be in nearly all instances _except_ an
 		// attempted XSS attack.
 
 		if (function_exists('getimagesize') && @getimagesize($file) !== FALSE)
@@ -866,7 +866,7 @@ class CI_Upload {
 
 			if ( ! preg_match('/<(a|body|head|html|img|plaintext|pre|script|table|title)[\s>]/i', $opening_bytes))
 			{
-				return TRUE; // its an image, no "triggers" detected in the first 256 bytes, we're good
+				return TRUE; // its an images, no "triggers" detected in the first 256 bytes, we're good
 			}
 		}
 

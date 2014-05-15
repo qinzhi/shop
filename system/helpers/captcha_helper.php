@@ -32,8 +32,8 @@
  *
  * @access	public
  * @param	array	array of data for the CAPTCHA
- * @param	string	path to create the image in
- * @param	string	URL to the CAPTCHA image folder
+ * @param	string	path to create the images in
+ * @param	string	URL to the CAPTCHA images folder
  * @param	string	server path to font
  * @return	string
  */
@@ -129,7 +129,7 @@ if ( ! function_exists('create_captcha'))
 		$y_axis = ($angle >= 0 ) ? rand($img_height, $img_width) : rand(6, $img_height);
 
 		// -----------------------------------
-		// Create image
+		// Create images
 		// -----------------------------------
 
 		// PHP.net recommends imagecreatetruecolor(), but it isn't always available
@@ -225,7 +225,7 @@ if ( ! function_exists('create_captcha'))
 		imagerectangle($im, 0, 0, $img_width-1, $img_height-1, $border_color);
 
 		// -----------------------------------
-		//  Generate the image
+		//  Generate the images
 		// -----------------------------------
 
 		$img_name = $now.'.jpg';
@@ -236,7 +236,7 @@ if ( ! function_exists('create_captcha'))
 
 		ImageDestroy($im);
 
-		return array('word' => $word, 'time' => $now, 'image' => $img);
+		return array('word' => $word, 'time' => $now, 'images' => $img);
 	}
 }
 

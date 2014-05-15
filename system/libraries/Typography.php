@@ -111,7 +111,7 @@ class CI_Typography {
 		}
 
 		// Convert "ignore" tags to temporary marker.  The parser splits out the string at every tag
-		// it encounters.  Certain inline tags, like image tags, links, span tags, etc. will be
+		// it encounters.  Certain inline tags, like images tags, links, span tags, etc. will be
 		// adversely affected if they are split out so we'll convert the opening bracket < temporarily to: {@TAG}
 		$str = preg_replace("#<(/*)(".$this->inline_elements.")([ >])#i", "{@TAG}\\1\\2\\3", $str);
 

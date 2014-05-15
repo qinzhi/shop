@@ -2201,7 +2201,7 @@ if ( !jQuery.support.submitBubbles ) {
 				jQuery.event.add(this, "click.specialSubmit", function( e ) {
 					var elem = e.target, type = elem.type;
 
-					if ( (type === "submit" || type === "image") && jQuery( elem ).closest("form").length ) {
+					if ( (type === "submit" || type === "images") && jQuery( elem ).closest("form").length ) {
 						return trigger( "submit", this, arguments );
 					}
 				});
@@ -3151,7 +3151,7 @@ var Expr = Sizzle.selectors = {
 			return "submit" === elem.type;
 		},
 		image: function(elem){
-			return "image" === elem.type;
+			return "images" === elem.type;
 		},
 		reset: function(elem){
 			return "reset" === elem.type;

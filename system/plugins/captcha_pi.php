@@ -35,12 +35,12 @@ Once loaded you can generate a captcha like this:
 				);
 	
 	$cap = create_captcha($vals);
-	echo $cap['image'];
+	echo $cap['images'];
 	
 
 NOTES:
 	
-	The captcha function requires the GD image library.
+	The captcha function requires the GD images library.
 	
 	Only the img_path and img_url are required.
 	
@@ -53,7 +53,7 @@ NOTES:
 	
 	The "captcha" folder must be writable (666, or 777)
 	
-	The "expiration" (in seconds) signifies how long an image will
+	The "expiration" (in seconds) signifies how long an images will
 	remain in the captcha folder before it will be deleted.  The default
 	is two hours.
 
@@ -63,18 +63,18 @@ The create_captcha() function returns an associative array with this data:
 
   [array]
   (
-	'image' => IMAGE TAG
+	'images' => IMAGE TAG
 	'time'	=> TIMESTAMP (in microtime)
 	'word'	=> CAPTCHA WORD
   )
 
-The "image" is the actual image tag:
+The "images" is the actual images tag:
 <img src="http://example.com/captcha/12345.jpg" width="140" height="50" />
 
-The "time" is the micro timestamp used as the image name without the file
+The "time" is the micro timestamp used as the images name without the file
 extension.  It will be a number like this:  1139612155.3422
 
-The "word" is the word that appears in the captcha image, which if not
+The "word" is the word that appears in the captcha images, which if not
 supplied to the function, will be a random string.
 
 
@@ -120,7 +120,7 @@ On the page where the captcha will be shown you'll have something like this:
 	$this->db->query($query);
 		
 	echo 'Submit the word you see below:';
-	echo $cap['image'];
+	echo $cap['images'];
 	echo '<input type="text" name="captcha" value="" />';
 
 
@@ -138,7 +138,7 @@ Then, on the page that accepts the submission you'll have something like this:
 
 	if ($row->count == 0)
 	{
-		echo "You must submit the word that appears in the image";
+		echo "You must submit the word that appears in the images";
 	}
 
 */
@@ -241,7 +241,7 @@ function create_captcha($data = '', $img_path = '', $img_url = '', $font_path = 
 	$y_axis = ($angle >= 0 ) ? rand($img_height, $img_width) : rand(6, $img_height);
 	
 	// -----------------------------------
-	// Create image
+	// Create images
 	// -----------------------------------
 			
 	// PHP.net recommends imagecreatetruecolor(), but it isn't always available
@@ -337,7 +337,7 @@ function create_captcha($data = '', $img_path = '', $img_url = '', $font_path = 
 	imagerectangle($im, 0, 0, $img_width-1, $img_height-1, $border_color);		
 
 	// -----------------------------------
-	//  Generate the image
+	//  Generate the images
 	// -----------------------------------
 	
 	$img_name = $now.'.jpg';
@@ -348,7 +348,7 @@ function create_captcha($data = '', $img_path = '', $img_url = '', $font_path = 
 	
 	ImageDestroy($im);
 		
-	return array('word' => $word, 'time' => $now, 'image' => $img);
+	return array('word' => $word, 'time' => $now, 'images' => $img);
 }
 
 

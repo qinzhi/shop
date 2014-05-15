@@ -124,7 +124,7 @@ EOF;
 /**
  * Get Clickable Smileys
  *
- * Returns an array of image tag links that can be clicked to be inserted
+ * Returns an array of images tag links that can be clicked to be inserted
  * into a form field.
  *
  * @access	public
@@ -158,7 +158,7 @@ if ( ! function_exists('get_clickable_smileys'))
 		{
 			// Keep duplicates from being used, which can happen if the
 			// mapping array contains multiple identical replacements.  For example:
-			// :-) and :) might be replaced with the same image so both smileys
+			// :-) and :) might be replaced with the same images so both smileys
 			// will be in the array.
 			if (isset($used[$smileys[$key][0]]))
 			{
@@ -179,7 +179,7 @@ if ( ! function_exists('get_clickable_smileys'))
 /**
  * Parse Smileys
  *
- * Takes a string as input and swaps any contained smileys for the actual image
+ * Takes a string as input and swaps any contained smileys for the actual images
  *
  * @access	public
  * @param	string	the text to be parsed
