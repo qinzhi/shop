@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
     <title>校园电子商务网站</title>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo SOURCE_ROOT;?>/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo SOURCE_ROOT;?>/jyjz/css/jyjz.css" />
     <script src="<?php echo SOURCE_ROOT;?>/jyjz/js/indexwscs.js" type="text/javascript"></script>
 
 </head>
