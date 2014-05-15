@@ -47,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="556" selection-end="556" vertical-scroll-proportion="-4.3018866">
+            <state line="3" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="0.116564415">
               <folding>
                 <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jyjz.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jyjz.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/jyjz/css/jyjz.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="58" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.3321033">
+            <state line="360" column="58" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="88" selection-start="388" selection-end="427" vertical-scroll-proportion="-3.392857">
+            <state line="3" column="69" selection-start="296" selection-end="309" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
@@ -641,27 +641,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/jyjz/css/jyjz.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="360" column="58" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="88" selection-start="388" selection-end="427" vertical-scroll-proportion="-3.392857">
+        <state line="3" column="69" selection-start="296" selection-end="309" vertical-scroll-proportion="-2.0357144">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="556" selection-end="556" vertical-scroll-proportion="-4.3018866">
+        <state line="3" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="0.116564415">
           <folding>
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/jyjz/css/jyjz.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="58" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.3321033">
-          <folding />
         </state>
       </provider>
     </entry>
