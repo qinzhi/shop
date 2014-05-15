@@ -10,7 +10,7 @@
     <file path="/Dummy.txt" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469763801" ignored="false" />
     <file path="/shop.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334037918" ignored="false" />
     <file path="/registered.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334216136" ignored="false" />
-    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399986469080" ignored="false" />
+    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159553289" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/manager/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/controllers/hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470245061" ignored="false" />
@@ -18,6 +18,7 @@
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/hyh/message_center_hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469874078" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/hyh/message_centeradd_hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470099464" ignored="false" />
     <file path="/message_centeradd_hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470099464" ignored="false" />
+    <file path="/jyjz.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159024501" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +38,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="supplier.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/supplier.php">
+      <file leaf-file-name="jyjz.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/jyjz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="821" selection-end="821" vertical-scroll-proportion="-0.6785714">
+            <state line="13" column="36" selection-start="557" selection-end="561" vertical-scroll-proportion="-8.821428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Init.inc.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/Init.inc.php">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="30" selection-start="7457" selection-end="7475" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="301" column="25" selection-start="14006" selection-end="14009" vertical-scroll-proportion="0.5337423">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,70 +62,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="0" selection-start="4919" selection-end="4919" vertical-scroll-proportion="-41.392857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="448" selection-end="488" vertical-scroll-proportion="-1.8490566">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="62" selection-start="558" selection-end="558" vertical-scroll-proportion="-4.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/about.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="61" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-20.357143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donate.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/donate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="17" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.25053534">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="programs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/programs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="742" selection-end="749" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pc/courier/query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="62" selection-start="560" selection-end="560" vertical-scroll-proportion="-6.821429">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courier.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/courier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="2" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+            <state line="28" column="18" selection-start="1142" selection-end="1167" vertical-scroll-proportion="-8.142858">
               <folding />
             </state>
           </provider>
@@ -137,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/libraries/ZzgdController.php" />
         <option value="$PROJECT_DIR$/config/Config.inc.php" />
         <option value="$PROJECT_DIR$/app/controllers/supplier.php" />
         <option value="$PROJECT_DIR$/source/css/style.css" />
@@ -152,6 +92,8 @@
         <option value="$PROJECT_DIR$/app/views/pc/courier/contact.php" />
         <option value="$PROJECT_DIR$/app/views/pc/courier/about.php" />
         <option value="$PROJECT_DIR$/app/views/pc/courier/donate.php" />
+        <option value="$PROJECT_DIR$/app/controllers/jyjz.php" />
+        <option value="$PROJECT_DIR$/app/views/pc/jyjz/index.php" />
       </list>
     </option>
   </component>
@@ -217,6 +159,82 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shops" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jyjz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shops" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jyjz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shops" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jyjz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shops" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -257,15 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="courier" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,12 +290,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\images" />
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\css\js" />
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz\css" />
       <recent name="D:\soft\phpStorm\phpStorm\shops" />
       <recent name="D:\soft\phpStorm\phpStorm" />
-      <recent name="D:\soft\phpStorm\phpStorm\shop\shop\source" />
-      <recent name="D:\soft\phpStorm\phpStorm\shop" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\soft\phpStorm\phpStorm\shops\source\jyjz" />
       <recent name="D:\soft\phpStorm\phpStorm\shop\shop\source\css" />
       <recent name="D:\soft\phpStorm\phpStorm\shop\shop\source" />
     </key>
@@ -447,14 +459,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32272726" sideWeight="0.99140894" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32272726" sideWeight="0.99140894" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -531,35 +543,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/libraries/ZzgdController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="328" selection-end="341" vertical-scroll-proportion="0.23312883" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/CommanDaoFm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="127" selection-end="127" vertical-scroll-proportion="0.39658445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/c/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/shop/registered.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="6" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/shop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/Config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.03696498" />
@@ -572,23 +555,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/supplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="821" selection-end="821" vertical-scroll-proportion="-0.6785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/courier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="2" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="4919" selection-end="4919" vertical-scroll-proportion="-41.392857">
           <folding />
         </state>
       </provider>
@@ -621,17 +590,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/courier/programs.php">
+    <entry file="file://$PROJECT_DIR$/app/views/pc/courier/donate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="742" selection-end="749" vertical-scroll-proportion="-8.75">
+        <state line="39" column="17" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-2.2075472">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pc/courier/donate.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/supplier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.25053534">
+        <state line="23" column="10" selection-start="821" selection-end="821" vertical-scroll-proportion="-10.571428">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="0" selection-end="795" vertical-scroll-proportion="-8.857142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/jyjz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="557" selection-end="561" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/jyjz/css/jyjz.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pc/courier/programs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="284" selection-end="310" vertical-scroll-proportion="-4.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/jyjz/js/indexwscs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="18" selection-start="1142" selection-end="1167" vertical-scroll-proportion="-8.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="25" selection-start="14006" selection-end="14009" vertical-scroll-proportion="0.5337423">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
