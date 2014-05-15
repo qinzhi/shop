@@ -85,13 +85,13 @@
                 </ul>
             </div>
         </li>
-        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">就业兼职</a>
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyjz/index">就业兼职</a>
             <div class="pos_a">
                 <ul id="nav">
 
-                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">兼职招骋</a></li>
-                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">名企招骋</a></li>
-                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">投递简历</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyjz/index">兼职招骋</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyjz/index">名企招骋</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyjz/index">投递简历</a></li>
 
 
                 </ul>

@@ -10,7 +10,7 @@
     <file path="/Dummy.txt" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469763801" ignored="false" />
     <file path="/shop.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334037918" ignored="false" />
     <file path="/registered.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1393334216136" ignored="false" />
-    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159805012" ignored="false" />
+    <file path="/index.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1400159900766" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/views/manager/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="/nav.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399469592128" ignored="false" />
     <file path="$PROJECT_DIR$/../mjzlmanager/app/controllers/hyh.php" changelist="2c397062-4929-43ea-a9cd-72f55185be7f" time="1399470245061" ignored="false" />
@@ -50,7 +50,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="64" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.5337423">
+            <state line="86" column="58" selection-start="2609" selection-end="2609" vertical-scroll-proportion="-1.7586912">
               <folding>
                 <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="64" selection-start="2288" selection-end="2288" vertical-scroll-proportion="-8.821428">
+            <state line="93" column="70" selection-start="3601" selection-end="3601" vertical-scroll-proportion="-17.0">
               <folding />
             </state>
           </provider>
@@ -641,14 +641,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/shop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="64" selection-start="2288" selection-end="2288" vertical-scroll-proportion="-8.821428">
+        <state line="93" column="70" selection-start="3601" selection-end="3601" vertical-scroll-proportion="-17.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pc/jyjz/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="64" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.5337423">
+        <state line="86" column="58" selection-start="2609" selection-end="2609" vertical-scroll-proportion="-1.7586912">
           <folding>
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
