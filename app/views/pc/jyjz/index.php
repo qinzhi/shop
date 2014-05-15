@@ -44,7 +44,7 @@
 </div>
 <div class="menu">
     <ul>
-        <li><a href="#">首页</a></li>
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/shop/index">首页</a></li>
 
 
 
@@ -84,25 +84,25 @@
                 </ul>
             </div>
         </li>
-        <li><a href="#">就业兼职</a>
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">就业兼职</a>
             <div class="pos_a">
                 <ul id="nav">
 
-                    <li><a href="#">兼职招骋</a></li>
-                    <li><a href="#">名企招骋</a></li>
-                    <li><a href="#">投递简历</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">兼职招骋</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">名企招骋</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/jyzj/index">投递简历</a></li>
 
 
                 </ul>
             </div>
 
         </li>
-        <li><a href="#">快递在线</a>
+        <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递在线</a>
             <div class="pos_a">
                 <ul id="nav">
 
-                    <li><a href="#">快递查询</a></li>
-                    <li><a href="#">快递订购</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递查询</a></li>
+                    <li><a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">快递订购</a></li>
 
 
 
