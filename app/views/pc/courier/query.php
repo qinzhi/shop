@@ -13,7 +13,7 @@
 
     <div><br><img src="<?php echo SOURCE_ROOT;?>/courier/images/标题.jpg" width="380" height="70">
         <div>
-            <a href="donate.html">donate</a>
+            <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">donate</a>
             <ul>
                 <li>
                     <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/index">首页</a>

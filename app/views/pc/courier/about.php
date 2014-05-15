@@ -13,22 +13,22 @@
     <div><br><img src="<?php echo SOURCE_ROOT;?>/courier/images/标题.jpg" width="380" height="70">
 
         <div>
-            <a href="donate.html">donate</a>
+            <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/donate">donate</a>
             <ul>
                 <li>
-                    <a href="http://taoth.cn/shop/index.php/courier/index">首页</a>
+                    <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/index">首页</a>
                 </li>
                 <li class="selected">
-                    <a href="http://taoth.cn/shop/index.php/courier/about">关于</a>
+                    <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/about">关于</a>
                 </li>
                 <li>
-                    <a href="http://taoth.cn/shop/index.php/courier/programs">我们的服务</a>
+                    <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/programs">我们的服务</a>
                 </li>
                 <li>
-                    <a href="http://taoth.cn/shop/index.php/courier/query">快递查询</a>
+                    <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/query">快递查询</a>
                 </li>
                 <li>
-                    <a href="http://taoth.cn/shop/index.php/courier/contact">联系我们</a>
+                    <a href="<?php echo APP_WEB_INDEX_ROOT;?>/courier/contact">联系我们</a>
                 </li>
 
             </ul>
